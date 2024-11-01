@@ -19,7 +19,7 @@ class CircleDetectorNode(Node):
         if not self.cap.isOpened():
             print("Error: Camera could not be opened.")
         else:
-            self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+            # self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
             # self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 405)
 
             ret, frame = self.cap.read()
